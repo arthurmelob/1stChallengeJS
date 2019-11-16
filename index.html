@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onscroll="scrollWindow(event)">
+    <header>
+        <div class="menuBox">
+            <div class="logoBox">
+                <a href="index.html">
+                    <img src="assets/logo.svg">
+                </a>
+            </div>
+            <nav>
+                <ul class="menuList">
+                    <a class="menuLink" href="index.html">
+                        <li class="linkTxt">Inicio</li>
+                    </a>
+                    <a class="menuLink" href="series.html">
+                        <li class="linkTxt">Séries</li>
+                    </a>
+                    <a class="menuLink" href="film.html">
+                        <li class="linkTxt">Filmes</li>
+                    </a>
+                    <a class="menuLink" href="recent.html">
+                        <li class="linkTxt">Adicionados recentemente</li>
+                    </a>
+                    <a class="menuLink" href="mylist.html">
+                        <li class="linkTxt">Minha lista</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+        <div class="perfilBox">
+            <div class="search-box">
+                <img src="assets/lupa.png" onclick="search()">         
+                <input class="pesquisa" type="text" placeholder="Títulos e genero...">
+            </div>
+            <div class="kids-link">
+                <a class="kids-linkText" href="">
+                    <h1>INFANTIL</h1>
+                </a>
+            </div>
+            <div class="notify-bell">
+                <img class="bellImg" src="assets/notifybell.png">
+            </div>
+            <div class="perfil-menu" onclick="showMenu(event)">
+                <img class="avatar" src="assets/avatar.png">
+                <h1> > </h1>
+                <div class="menuAccount">
+                    <div class="menuAccount-Box">
+                        <div class="accounts">
+                            <img class="users" src="assets/user2.png">
+                            <a class="accountNames" href="#">Usuário 2</a>
+                        </div>
+                        <div class="accounts">
+                            <img class="users" src="assets/user3.png">
+                            <a class="accountNames" href="#">Usuário 3</a>
+                        </div>
+                        <a class="perfilManager" href="#">Gerenciar perfis</a>
+                    </div>
+                    <div class="menuAccount-line"></div>
+                    <div class="menuLink-Box">
+                        <a class="menuAccount-links" href="#">Conta</a>
+                        <a class="menuAccount-links" href="#">Centro de ajuda</a>
+                        <a class="menuAccount-links" href="#">Sair da Netflix</a>
+                    </div>
+                </div>
+            </div>
+        </div>              
+    </header>
+    <main>
+        <div class="background-flash">
+            <div class="introduction">
+                <img src="assets/flash.webp">
+                <h1>Após testemunhar o estranho assassinato de sua mãe e a injusta acusação de seu pai pelo crime, Barry Allen fica sob os cuidados do detetive Joe West e sua filha Iris West.</h1>
+            </div>
+            <div class="buttonsBox">
+                <div class="button1" onchange="hoverOptions()">
+                    <span class="symbol1"> &#9654; </span>
+                    <p class="buttonText1">Assistir</p>
+                </div>
+                <div class="button2" onchange="hoverOptions()">
+                    <span class="symbol2"> &#10004; </span>
+                    <p class="buttonText2">Minha lista</p>
+                </div>
+                <div class="button3" onchange="hoverOptions()">
+                    <span class="symbol3"> &#x2139; </span>
+                    <p class="buttonText3">Mais informações</p>
+                </div>
+            </div>    
+        </div>
+        <div class="popularSection">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+        <div class="mylistSection">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+        <div class="watchagainSection">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

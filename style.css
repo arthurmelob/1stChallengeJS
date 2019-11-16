@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: #141414;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: transparent;
+    width: 100%;
+    position: fixed;
+    transition: all 750ms;
+}
+
+/* left nav bar */
+
+.menuBox{
+    display: flex;
+    flex-direction: row;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.logoBox{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    padding: 20px 40px;
+}
+.logoBox img{
+    width: 100%;
+}
+.menuList{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.menuLink{
+    margin: 0 8px;
+}
+.linkTxt{
+    color: white;
+    font-size: 18px;
+}
+.linkTxt:hover{
+    color: #b3b3b3;
+}
+
+/* right nav bar */
+
+.perfilBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 40px;
+}
+.search-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40px;
+    height: 30px;
+    margin: 0 5px;
+}
+.search-box img{
+    width: 25px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.pesquisa{
+    display: none;
+    width: 200px;
+    height: 25px;
+    color: white;
+    outline: none;
+    background-color: #141414;
+    border: none;
+    font-size: 16px;
+    margin: 0 5px;
+}
+.kids-link{
+    margin: 0 5px;
+}
+.kids-linkText h1{
+    color: white;
+    font-size: 12px;
+}
+.notify-bell{
+    width: 30px;
+}
+.bellImg{
+    width: 100%;
+}
+.perfil-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 60px;
+}
+.avatar{
+    width: 40px;
+    cursor: pointer;
+}
+.perfil-menu h1{
+    width: 30px;
+    font-size: 15px;
+    color: white;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+/* menu account */
+
+.menuAccount{
+    display: none;
+    flex-direction: column;
+    width: 200px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    padding: 10px 0;
+    border: solid 1px rgba(255, 255, 255, 0.15);
+}
+.menuAccount-Box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5px;
+}
+.accounts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 5px;
+}
+.users{
+    width: 35px;
+}
+.accountNames{
+    color:#FFF;
+    font-size: 16px;
+    padding: 0 0 0 10px;
+}
+.accountNames:hover{
+    text-decoration: underline;
+}
+.menuAccount-line{
+    height: 2px;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.15);
+    margin: 5px 0;
+}
+.menuLink-Box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+}
+.perfilManager{
+    color: #FFF;
+    font-size: 16px;
+    padding: 5px 5px;
+}
+.perfilManager:hover{
+    text-decoration: underline;
+}
+.menuAccount-links{
+    color: #FFF;
+    font-weight: bolder;
+    font-size: 16px;
+    padding: 5px 5px;
+}
+.menuAccount-links:hover{
+    text-decoration: underline;
+}
+
+/*  ------- main ----------  */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* --------- introdução produto ----------- */
+
+.background-flash{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 40px;
+    background-image: url(assets/background-flash.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 720px;
+}
+.introduction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 0 0 0;
+}
+.introduction img{
+    max-width: 25vw;
+}
+.introduction h1{
+    max-width: 35vw;
+    font-size: 17px;
+    color:#fff;
+    padding: 40px 0;
+}
+.buttonsBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.buttonText1, .buttonText2, .buttonText3{
+    font-size: 16px;
+    color: #fff;
+    font-weight: bolder;
+    margin: 0 0 0 10px;
+}
+.button1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(51, 51, 51, 0.4);
+    width: 150px;
+    height: 40px;
+    border-radius: 4px;
+    margin: 0 5px 0 0;
+    cursor: pointer;
+}
+.symbol1{
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+}
+.button2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(51, 51, 51, 0.4);
+    width: 170px;
+    border-radius: 4px;
+    margin: 0 5px;
+    height: 40px;
+    cursor: pointer;
+}
+.symbol2{
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+}
+.button3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(51, 51, 51, 0.4);
+    justify-content: center;
+    width: 200px;
+    border-radius: 4px;
+    margin: 0 5px;
+    height: 40px;
+    cursor: pointer;
+}
+.symbol3{
+    width: 20px;
+    color: #fff;
+    border-radius: 50%;
+    border: solid 2px #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* ------ slide produtos ------- */
+
+.popularSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
