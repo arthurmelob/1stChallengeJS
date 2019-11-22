@@ -295,7 +295,7 @@ main{
 
 /* ------ slide produtos ------- */
 
-.popularSection{
+.popularSection, .mylistSection, .watchagainSection{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -303,12 +303,13 @@ main{
     flex-wrap: nowrap;
     padding: 20px 0;
 }
-.popularSlide{
+.popularSlide, .mylistSlide, .watchagainSlide{
     display: flex;
     flex-direction: row;
     align-items: center;
+    height: 150px;
 }
-.popular1, .popular2, .popular3, .popular4{
+.popular1, .popular2, .popular3, .popular4, .list1, .list2, .list3, .list4, .again1, .again2, .again3, .again4{
     width: 320px;
     height: 150px;
     margin: 0 5px;
@@ -318,23 +319,23 @@ main{
     font-size: 40px;
     padding: 0 15px;
 }
-.prevArrow-Slide{
-    position: absolute;
-    left: 0;
-}
-.nextArrow-Slide{
-    position: absolute;
-    right: 0;
-}
 .prevArrow1, .prevArrow2, .prevArrow3{
     display: flex;
     align-items: center;
     height: 150px;
     width: 50px;
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+    background-color: rgba(51, 51, 51, 0.2);
 }
 .nextArrow1, .nextArrow2, .nextArrow3{
     display: flex;
     align-items: center;
     height: 150px;
     width: 50px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    background-color: rgba(51, 51, 51, 0.2);
 }

@@ -112,64 +112,83 @@ perfil.addEventListener('click', function(event){
 // popular slide //
 
 
-let slides = [
+let slide1 = [
     {
         popular1: 'assets/popular/vikingsWrapper.jpg',
         popular2: 'assets/popular/gothamWrapper.jpg',
         popular3: 'assets/popular/breakingbadWrapper.jpg',
-        popular4: 'assets/popular/brooklyn99Wrapper.jpg',
+        popular4: 'assets/popular/brooklyn99Wrapper.jpg',  
+    },
+    {
+        popular1: 'assets/popular/friendsWrapper.jpg',
+        popular2: 'assets/popular/blackmirrorWrapper.png',
+        popular3: 'assets/popular/luciferWrapper.jpg',
+        popular4: 'assets/popular/shooterWrapper.jpg',
+    }  
+];
+let slide2 = [
+    {
         list1: 'assets/mylist/daredevilWrapper.png',
-        list2: 'assets/mylist/blacksailsWrapper.png',
-        list3: 'assets/mylist/blacklistWrapper.png',
-        list4: 'assets/mylist/theranchWrapper.png',
+        list2: 'assets/mylist/blacksailsWrapper.jpg',
+        list3: 'assets/mylist/blacklistWrapper.jpg',
+        list4: 'assets/mylist/theranchWrapper.jpg'
+    },
+    {
+        list1: 'assets/mylist/alteredcarbonWrapper.jpg',
+        list2: 'assets/mylist/frontierWrapper.jpg',
+        list3: 'assets/mylist/marcopoloWrapper.jpg',
+        list4: 'assets/mylist/houseofcardsWrapper.jpg'
+    }
+];
+let slide3 = [
+    {
         again1: 'assets/watchagain/spartacusWrapper.jpg',
         again2: 'assets/watchagain/punisherWrapper.jpg',
         again3: 'assets/watchagain/sherlockWrapper.jpg',
         again4: 'assets/watchagain/freshprinceWrapper.jpg'
     },
     {
-        popular1: 'assets/popular/',
-        popular2: 'assets/popular/',
-        popular3: 'assets/popular/',
-        popular4: 'assets/popular/',
-        list1: 'assets/mylist/',
-        list2: 'assets/mylist/',
-        list3: 'assets/mylist/',
-        list4: 'assets/mylist/',
-        again1: 'assets/watchagain/',
-        again2: 'assets/watchagain/',
-        again3: 'assets/watchagain/',
-        again4: 'assets/watchagain/'
-    }  
-]
+        again1: 'assets/watchagain/bettercallsaulWrapper.jpg',
+        again2: 'assets/watchagain/drhouseWrapper.jpg',
+        again3: 'assets/watchagain/howimetyourmotherWrapper.jpg',
+        again4: 'assets/watchagain/thegetdownWrapper.jpeg'
+    }
+];
 
-let counter = 0
-let popular1 = document.querySelector('.popular1')
-let popular2 = document.querySelector('.popular2')
-let popular3 = document.querySelector('.popular3')
-let popular4 = document.querySelector('.popular4')
-let list1 = document.querySelector('.list1')
-let list2 = document.querySelector('.list2')
-let list3 = document.querySelector('.list3')
-let list4 = document.querySelector('.list4')
-let again1 = document.querySelector('.again1')
-let again2 = document.querySelector('.again2')
-let again3 = document.querySelector('.again3')
-let again4 = document.querySelector('.again4')
+let counterSlide1 = 0
+let counterSlide2 = 0
+let counterSlide3 = 0
+let popularSection1 = document.querySelector('.popular1')
+let popularSection2 = document.querySelector('.popular2')
+let popularSection3 = document.querySelector('.popular3')
+let popularSection4 = document.querySelector('.popular4')
+let listSection1 = document.querySelector('.list1')
+let listSection2 = document.querySelector('.list2')
+let listSection3 = document.querySelector('.list3')
+let listSection4 = document.querySelector('.list4')
+let againSection1 = document.querySelector('.again1')
+let againSection2 = document.querySelector('.again2')
+let againSection3 = document.querySelector('.again3')
+let againSection4 = document.querySelector('.again4')
 
-function setImage(){
-    popuplar1.setAttribute('src', slides[counter].popular1)
-    popuplar2.setAttribute('src', slides[counter].popular2)
-    popuplar3.setAttribute('src', slides[counter].popular3)
-    popuplar4.setAttribute('src', slides[counter].popular4)
-    list1.setAttribute('src', slider[counter].list1)
-    list2.setAttribute('src', slider[counter].list2)
-    list3.setAttribute('src', slider[counter].list3)
-    list4.setAttribute('src', slider[counter].list4)
-    again1.setAttribute('src', slides[counter].again1)
-    again2.setAttribute('src', slides[counter].again2)
-    again3.setAttribute('src', slides[counter].again3)
-    again4.setAttribute('src', slides[counter].again4)
+function setImage1(){
+    popularSection1.setAttribute('src', slide1[counterSlide1].popular1)
+    popularSection2.setAttribute('src', slide1[counterSlide1].popular2)
+    popularSection3.setAttribute('src', slide1[counterSlide1].popular3)
+    popularSection4.setAttribute('src', slide1[counterSlide1].popular4)
+
+};
+function setImage2(){
+    listSection1.setAttribute('src', slide2[counterSlide2].list1)
+    listSection2.setAttribute('src', slide2[counterSlide2].list2)
+    listSection3.setAttribute('src', slide2[counterSlide2].list3)
+    listSection4.setAttribute('src', slide2[counterSlide2].list4)
+};
+function setImage3(){
+    againSection1.setAttribute('src', slide3[counterSlide3].again1)
+    againSection2.setAttribute('src', slide3[counterSlide3].again2)
+    againSection3.setAttribute('src', slide3[counterSlide3].again3)
+    againSection4.setAttribute('src', slide3[counterSlide3].again4)
 };
 
 let prevImg1 = document.querySelector('.prevArrow1')
@@ -179,63 +198,67 @@ let nextImg1 = document.querySelector('.nextArrow1')
 let nextImg2 = document.querySelector('.nextArrow2')
 let nextImg3 = document.querySelector('.nextArrow3')
 
+// slide 1 //
+
 prevImg1.addEventListener('click', function(){
-    if(counter > 0){
-        counter--
+    if(counterSlide1 > 0){
+        counterSlide1--
     }
     else{
-        counter = 1
+        counterSlide1 = 1
     }
-    setImage()
+    setImage1()
 })
 nextImg1.addEventListener('click', function(){
-    if(counter < 1){
-        counter++
+    if(counterSlide1 < 1){
+        counterSlide1++
     }
     else{
-        counter = 0
+        counterSlide1 = 0
     }
-    setImage()
+    setImage1()
 });
 
+// slide 2 //
 
 prevImg2.addEventListener('click', function(){
-    if(counter > 0){
-        counter--
+    if(counterSlide2 > 0){
+        counterSlide2--
     }
     else{
-        counter = 1
+        counterSlide2 = 1
     }
-    setImage()
+    setImage2()
 })
 nextImg2.addEventListener('click', function(){
-    if(counter < 1){
-        counter++
+    if(counterSlide2 < 1){
+        counterSlide2++
     }
     else{
-        counter = 0
+        counterSlide2 = 0
     }
-    setImage()
+    setImage2()
 });
 
+// slide 3 //
 
 prevImg3.addEventListener('click', function(){
-    if(counter > 0){
-        counter--
+    if(counterSlide3 > 0){
+        counterSlide3--
     }
     else{
-        counter = 1
+        counterSlide3 = 1
     }
-    setImage()
+    setImage3()
 })
 nextImg3.addEventListener('click', function(){
-    if(counter < 1){
-        counter++
+    if(counterSlide3 < 1){
+        counterSlide3++
     }
     else{
-        counter = 0
+        counterSlide3 = 0
     }
-    setImage()
+    setImage3()
 })
 
 // // 
