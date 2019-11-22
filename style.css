@@ -193,6 +193,7 @@ main{
     align-items: center;
     justify-content: center;
     width: 100%;
+    overflow: hidden;
 }
 
 /* --------- introdução produto ----------- */
@@ -299,4 +300,41 @@ main{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: nowrap;
+    padding: 20px 0;
+}
+.popularSlide{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.popular1, .popular2, .popular3, .popular4{
+    width: 320px;
+    height: 150px;
+    margin: 0 5px;
+}
+.nextArrow-Slide, .prevArrow-Slide{
+    color: #FFF;
+    font-size: 40px;
+    padding: 0 15px;
+}
+.prevArrow-Slide{
+    position: absolute;
+    left: 0;
+}
+.nextArrow-Slide{
+    position: absolute;
+    right: 0;
+}
+.prevArrow1, .prevArrow2, .prevArrow3{
+    display: flex;
+    align-items: center;
+    height: 150px;
+    width: 50px;
+}
+.nextArrow1, .nextArrow2, .nextArrow3{
+    display: flex;
+    align-items: center;
+    height: 150px;
+    width: 50px;
 }
